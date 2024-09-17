@@ -1,13 +1,12 @@
 import React from "react";
-
-const TeamSection = () => {
+export function TeamSection () {
   const teamMembers = [
     { name: "ធៀប គីមហួត", role: "ប្រធានក្រុម", image: "./img/♡TAEHYUNG♡.jfif" },
     { name: "ហ៊ុល មករា", role: "សមាជិកក្រុម", image: "./img/♡TAEHYUNG♡.jfif" },
     {
       name: "គង់ ស៊ីសុវណ្ណដារ៉ា",
       role: "សមាជិកក្រុម",
-      image: "./img/♡TAEHYUNG♡.jfif",
+      image: "",
     },
     {
       name: "យ៉េន ម៉ារ៉ា",
@@ -34,8 +33,8 @@ const TeamSection = () => {
 
   return (
     <div>
-      <div className="relative text-center font-bold text-4xl text-green-500">
-        <h3 data-aos="zoom-in" className="pt-14">
+      <div className="relative text-center font-khmer font-bold text-4xl text-green-600">
+        <h3 data-aos="fade-up" data-aos-duration="1000" className="pt-14">
           ក្រុមរបស់ពួកយើង
         </h3>
       </div>
@@ -43,10 +42,11 @@ const TeamSection = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5 justify-center py-20">
           {teamMembers.map((member, index) => (
             <section key={index} className="flex justify-center">
-              <div className="h-[230px] w-[205px] flex justify-center items-center relative">
+              <div className="h-[230px] w-[205px] flex justify-center items-center relative font-land">
                 <div className="absolute bottom-0 left-0 w-[50%] h-[50%] border-l-[3px] border-b-[3px] border-green-500"></div>
                 <div
-                  data-aos="zoom-in"
+                  data-aos="fade-up-right"
+                  data-aos-duration="1000"
                   className="h-[218px] w-[193px] relative overflow-hidden"
                 >
                   <div className="absolute inset-0 bg-blue-600 transform origin-bottom-left -z-20"></div>
@@ -87,8 +87,12 @@ const TeamSection = () => {
             </section>
           ))}
         </div>
-        <div className="text-center text-blue-600 max-w-[780px] mx-auto pb-14 px-4 md:px-8 font-body font-semibold">
-          <p data-aos="zoom-in" className="text-base lg:text-lg xl:text-xl">
+        <div className="text-center text-blue-600 max-w-[780px] mx-auto pb-14 px-4 md:px-8 font-land font-semibold">
+          <p
+            data-aos="fade-up"
+            data-aos-duration="400"
+            className="text-base lg:text-lg xl:text-xl"
+          >
             ពួកយើងគឺជាស្ថាបនិកនៃ សិក្សា
             ហើយយើងប្រឹងប្រែងអស់ពីសមត្ថភាពដើម្បីបំពេញតម្រូវការរបស់អតិថិជនរបស់យើង
             ដើម្បីជួយសម្រួលដល់ការស្វែងរកទិន្នន័យ និងព័ត៌មានផ្សេងៗអំពីការសិក្សា។
