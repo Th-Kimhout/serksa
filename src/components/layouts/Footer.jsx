@@ -1,17 +1,12 @@
-import React from "react";
 
-const Footer = () => {
+export function Footers() {
   return (
     <footer>
-      <section className="border-2 mt-10 bg-white sm:pt-14 lg:pt-20">
+      <section className="border-2 mt-10 w-4-5 mx-auto bg-white sm:pt-14 lg:pt-20">
         <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
           <div className="grid grid-cols-2 gap-x-5 gap-y-12 md:grid-cols-5 md:gap-x-12">
             <div>
-              <img
-                className="w-25 h-15"
-                src="./img/logo computer-01.png"
-                alt="logo image"
-              />
+              <img className="w-40 h-30" src="src/assets/logo computer-01.png" alt="logo image" />
               <h1 className="text-3xl font-bold text-green-600 text-start">
                 SERKSA
               </h1>
@@ -178,6 +173,4 @@ const Footer = () => {
       </section>
     </footer>
   );
-};
-
-export default Footer;
+}
