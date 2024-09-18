@@ -34,7 +34,7 @@ export default function CoursePage() {
       <div className="max-w-sm bg-white border border-gray-200 rounded-lg cursor-pointer hover:shadow overflow-hidden">
         <a className="relative" href="#">
           <img
-            src="../Image/pyton.png"
+            src="../Image/php.png"
             alt="Course Image"
             className="w-full h-44 object-cover"
           />
@@ -323,7 +323,7 @@ export default function CoursePage() {
       <div className="max-w-sm bg-white border border-gray-200 rounded-lg cursor-pointer hover:shadow overflow-hidden">
         <a className="relative" href="#">
           <img
-            src="../Image/photoshop.png"
+            src="../Image/php.png"
             alt="Course Image"
             className="w-full h-44 object-cover"
           />
