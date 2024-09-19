@@ -1,11 +1,12 @@
-export function CourseCard() {
+import c1 from '../image/1.jpg'
+export function PopularCard(){
     return (
         <div
         class="max-w-sm bg-white border border-gray-200 rounded-lg cursor-pointer hover:shadow overflow-hidden"
       >
         <a class="relative" href="#">
           <img
-            src="../Image/pyton.png"
+            src={c1}
             alt="Course Image"
             class="w-full h-44 object-cover"
           />
@@ -22,20 +23,6 @@ export function CourseCard() {
             design.
           </p>
 
-          <div class="flex items-center mt-4">
-            <img
-              class="w-10 h-10 rounded-full"
-              src="../Image/profile.jpg"
-              alt="Instructor Photo"
-            />
-            <div class="ml-3">
-              <p class="text-sm font-medium text-gray-900">
-                Prashant Kumar Singh
-              </p>
-              <p class="text-sm text-gray-500">Software Developer</p>
-            </div>
-          </div>
-
           <div class="mt-4 flex items-center justify-between text-gray-500">
             <div class="flex items-center">
               <i class="fa-solid fa-book-open w-5 h-5 mt-2 text-green-600"></i>
@@ -48,5 +35,5 @@ export function CourseCard() {
           </div>
         </div>
       </div>
-    );
+    )
 }
