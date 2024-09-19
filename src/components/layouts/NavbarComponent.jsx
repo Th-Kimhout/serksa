@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-export default function NavbarComponent() {
+export function NavbarComponent() {
   const [mobileMenuVisible, setMobileMenuVisible] = useState(false);
 
   const toggleMobileMenu = () => {
@@ -10,19 +10,19 @@ export default function NavbarComponent() {
 
   return (
     <>
-      <nav className="bg-white flex justify-between items-center w-4/5 mx-auto">
+      <nav className="flex items-center justify-between w-4/5 mx-auto bg-white">
         <div className="flex items-center space-x-6">
           <div className="flex items-center">
             <Link to="/">
               <img
                 src="../Image/logo.png"
                 alt="logo image"
-                className="h-15 w-20"
+                className="w-20 h-15"
               />
             </Link>
           </div>
 
-          <ul className="hidden md:flex space-x-4 text-gray-600 text-sm">
+          <ul className="hidden space-x-4 text-sm text-gray-600 md:flex">
             <li>
               <Link to="/CoursePage" className="hover:text-blue-600">
                 Courses
@@ -51,11 +51,11 @@ export default function NavbarComponent() {
             <input
               type="text"
               placeholder="Search"
-              className="border border-gray-300 rounded-md pl-3 px-20 py-2 text-xs"
+              className="px-20 py-2 pl-3 text-xs border border-gray-300 rounded-md"
             />
-            <button className="absolute right-2 top-1 text-gray-500">
+            <button className="absolute text-gray-500 right-2 top-1">
               <svg
-                className="h-4 w-4"
+                className="w-4 h-4"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -78,7 +78,7 @@ export default function NavbarComponent() {
             <img
               src="../Image/instructor.png"
               alt="Profile"
-              className="h-6 w-6 rounded-full border-2 border-gray-300"
+              className="w-6 h-6 border-2 border-gray-300 rounded-full"
             />
           </Link>
         </div>
@@ -90,7 +90,7 @@ export default function NavbarComponent() {
             onClick={toggleMobileMenu}
           >
             <svg
-              className="h-4 w-4"
+              className="w-4 h-4"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -113,7 +113,7 @@ export default function NavbarComponent() {
           mobileMenuVisible ? "" : "hidden"
         }`}
       >
-        <ul className="space-y-4 text-gray-600 font-semibold text-sm">
+        <ul className="space-y-4 text-sm font-semibold text-gray-600">
           <li>
             <Link to="/CoursePage" className="hover:text-blue-600">
               Courses
