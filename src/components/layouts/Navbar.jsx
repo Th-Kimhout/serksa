@@ -18,10 +18,11 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center">
             <img
-              src="src/assets/logo computer-01.png"
+              src="src/Asset/logo.png"
               alt="New Logo"
               className="h-20 w-25"
             />
+            <a href="#"></a>
           </div>
 
           {/* Links (Hidden on mobile, shown on larger screens) */}
