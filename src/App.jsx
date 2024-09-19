@@ -8,6 +8,12 @@ export default function App() {
 
   return (
     <div>
+      <Header />
+      <AboutUsSection />
+      <MissionSection />
+      <BenefitsSection />
+      <TeamSection />
+      <Footer />
       <NavbarComponent />
       <CoursePage />
       <FooterComponent />
