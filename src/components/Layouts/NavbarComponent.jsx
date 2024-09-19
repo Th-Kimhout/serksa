@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import logo from "../image/logo.png";
+import logo from "../../image/logo.png";
 
-const Header = () => {
+const NavbarComponent = () => {
   // State to control mobile menu visibility
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -18,7 +18,11 @@ const Header = () => {
         <div className="flex items-center space-x-6">
           {/* Logo */}
           <div className="flex items-center">
-            <img src={logo} alt="New Logo" className="h-15 w-20" />
+            <img
+              src={logo}
+              alt="New Logo"
+              className="h-15 w-20"
+            />
           </div>
 
           {/* Links (Hidden on mobile, shown on larger screens) */}
@@ -52,9 +56,9 @@ const Header = () => {
             <input
               type="text"
               placeholder="Search"
-              className="border border-gray-300 rounded-md pl-3 px-10 py-1 text-xs"
+              className="border border-gray-300 rounded-md pl-3 px-20 py-2 text-xs"
             />
-            <button className="absolute right-2 top-1 text-gray-500">
+            <button className="absolute right-2 top-2 text-gray-500">
               <svg
                 className="h-4 w-4"
                 fill="none"
@@ -74,12 +78,9 @@ const Header = () => {
 
           {/* Icons */}
           <button className="text-gray-600">
-            <img
-              src="src/assets/moon.png"
-              className="h-4 w-4"
-              alt="New Moon Icon"
-            />
+          <i class="fa-solid fa-moon h-4 w-4"></i>
           </button>
+          
 
           {/* User profile */}
           <img
@@ -148,4 +149,5 @@ BsDX1okSH/2KXWqYaNXZV5XTgY++AfCLpjRh1QibGR4PPW901/K2Ex/kl2yIRBNh8of+G4wSCxjIZxyh
   );
 };
 
-export default Header;
+export default NavbarComponent;
+

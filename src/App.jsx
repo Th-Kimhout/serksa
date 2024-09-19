@@ -1,33 +1,16 @@
 import "./App.css";
-import FooterComponent from "./components/layouts/FooterComponent";
-import { NavbarComponent } from "./components/layouts/NavbarComponent";
-import CoursePage from "./pages/product/CoursePage";
-import { getAllCourses } from "./services/courses/courseFetch";
-export default function App() {
-  getAllCourses();
+import { FooterComponent } from "./components/Layouts/FooterComponent.jsx";
+import NavbarComponent from "./components/Layouts/NavbarComponent.jsx";
+import { Homepage } from "./pages/Homepage.jsx";
 
+function App() {
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <NavbarComponent />
+      <Homepage />
+      <FooterComponent />
     </>
   );
 }
+
+export default App;
