@@ -1,4 +1,4 @@
-import c1 from "../../image/1.jpg";
+import c1 from "../../assets/logo.png";
 export function PopularCard() {
   return (
     <div class="max-w-sm bg-white border border-gray-200 rounded-lg cursor-pointer hover:shadow overflow-hidden">
