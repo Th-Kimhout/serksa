@@ -1,14 +1,14 @@
 import "./App.css";
-import { Footer } from "./components/Footer.jsx";
-import Header from "./components/Navbar.jsx";
+import { FooterComponent } from "./components/Layouts/FooterComponent.jsx";
+import NavbarComponent from "./components/Layouts/NavbarComponent.jsx";
 import { Homepage } from "./pages/Homepage.jsx";
 
 function App() {
   return (
     <>
-      <Header />
+      <NavbarComponent />
       <Homepage />
-      <Footer />
+      <FooterComponent />
     </>
   );
 }
