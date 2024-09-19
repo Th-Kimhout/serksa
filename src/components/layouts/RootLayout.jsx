@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "./components/layouts/Navbar";
-
+import { NavbarComponent } from "./Navbar";
+import { FooterComponent } from "./Footer";
 import { Outlet } from "react-router-dom";
 import { Footers } from "./Footer";
 
