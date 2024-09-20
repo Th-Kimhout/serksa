@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ChatIcon from "../../assets/logo.png";
+import ChatIcon from "../../assets/Chatbot.png";
 import ChatWindow from "./ChatWindow";
 function ChatComponent() {
   const [isChatVisible, setIsChatVisible] = useState(false);
@@ -14,7 +14,7 @@ function ChatComponent() {
         src={ChatIcon}
         alt="Chat"
         onClick={handleIconClick}
-        className="w-28"
+        className="fixed cursor-pointer w-14 h-14 right-7 bottom-7"
       />
       {isChatVisible && (
         <div className="chat-window">

@@ -57,9 +57,9 @@ const GeminiChatBot = () => {
   };
 
   return (
-    <div className="flex flex-col h-screen max-w-4xl p-4 mx-auto">
-      <h1 className="mb-4 text-2xl font-bold">Gemini Chat</h1>
-      <div className="flex-1 p-4 mb-4 overflow-auto border border-gray-300 rounded-lg">
+    <div className="fixed flex flex-col p-4 mx-auto bg-white border border-gray-300 rounded-lg right-24 h-80 max-w-80 bottom-7">
+      <h1 className="mb-4 text-base font-bold">Gemini Assistant</h1>
+      <div className="flex-1 p-4 mb-4 overflow-auto border border-gray-300 rounded-lg scroll">
         {messages.map((message, index) => (
           <div
             key={index}
@@ -72,7 +72,7 @@ const GeminiChatBot = () => {
                 message.role === "user" ? "flex-row-reverse" : ""
               } max-w-3xl`}
             >
-              <div
+              {/* <div
                 className={`p-2 rounded-lg ${
                   message.role === "user"
                     ? "bg-blue-500 text-white"
@@ -80,14 +80,16 @@ const GeminiChatBot = () => {
                 }`}
               >
                 {message.role === "user" ? (
-                  <User className="w-6 h-6" />
+                  <User className="w-4 h-4" />
                 ) : (
                   <Bot className="w-6 h-6" />
                 )}
-              </div>
+              </div> */}
               <div
                 className={`p-3 rounded-lg ${
-                  message.role === "user" ? "bg-blue-100" : "bg-gray-100"
+                  message.role === "user"
+                    ? "bg-blue-100 text-sm"
+                    : "bg-gray-100 text-sm"
                 } w-full`}
               >
                 {message.role === "user" ? (
