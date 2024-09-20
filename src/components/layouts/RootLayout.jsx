@@ -3,6 +3,7 @@ import NavbarComponent from "./NavbarComponent";
 import FooterComponent from "./FooterComponent";
 import { Outlet } from "react-router-dom";
 import App from "../../App";
+import ChatHead from "../chatBot/ChatHead";
 
 export default function RootLayout() {
   return (
@@ -14,6 +15,8 @@ export default function RootLayout() {
         <App />
         <Outlet />
       </main>
+
+      <ChatHead />
 
       <FooterComponent />
     </>
