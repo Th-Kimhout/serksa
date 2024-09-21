@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-export default function NavbarComponent() {
+export function NavbarComponent() {
   const [mobileMenuVisible, setMobileMenuVisible] = useState(false);
 
   const toggleMobileMenu = () => {
@@ -15,7 +15,7 @@ export default function NavbarComponent() {
           <div className="flex items-center">
             <Link to="/">
               <img
-                src="../Image/logo.png"
+                src="src/assets/Image/logo.png"
                 alt="logo image"
                 className="w-20 h-15"
               />
@@ -34,7 +34,7 @@ export default function NavbarComponent() {
               </Link>
             </li>
             <li>
-              <Link to="/AboutUs" className="hover:text-blue-600">
+              <Link to="/AboutPage" className="hover:text-blue-600">
                 About Us
               </Link>
             </li>
@@ -76,7 +76,7 @@ export default function NavbarComponent() {
           </button>
           <Link to="/login">
             <img
-              src="../Image/instructor.png"
+              src="src/assets/Image/instructor.png"
               alt="Profile"
               className="w-6 h-6 border-2 border-gray-300 rounded-full"
             />
@@ -125,7 +125,7 @@ export default function NavbarComponent() {
             </Link>
           </li>
           <li>
-            <Link to="/AboutUs" className="hover:text-blue-600">
+            <Link to="/AboutPage" className="hover:text-blue-600">
               About Us
             </Link>
           </li>

@@ -1,38 +1,45 @@
 import React from "react";
 export function Members() {
   const teamMembers = [
-    { name: "ធៀប គីមហួត", role: "ប្រធានក្រុម", image: "./img/♡TAEHYUNG♡.jfif" },
+    {
+      name: "ធៀប គីមហួត",
+      role: "ប្រធានក្រុម",
+      image: "src/Asset/img/kimhout.jpg",
+    },
     {
       name: "ហ៊ុល មករា",
       role: "សមាជិកក្រុម",
-      image:
-        "https://scontent.fpnh5-2.fna.fbcdn.net/v/t39.30808-6/275335695_1129661767791648_3044346903401022575_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHNpXo_k3B-w7CUwontrIqPcy3Y_kDnHPFzLdj-QOcc8VzwNX7xYq3PbP2qoWN6Ta-t4vUfQnXikSqFa3cVpA2f&_nc_ohc=wCSFT-adve8Q7kNvgFqgo0W&_nc_ht=scontent.fpnh5-2.fna&_nc_gid=APm0nEf44JopkJWX8-97xWk&oh=00_AYC1DoQyP2IuPB0AdeLbs9byFG_zjTgAERcBrtHCSqw6tg&oe=66F0C8F0",
+      image: "src/Asset/img/makara.jpg",
     },
     {
       name: "គង់ ស៊ីសុវណ្ណដារ៉ា",
       role: "សមាជិកក្រុម",
-      image: "",
+      image: "src/Asset/img/dara.jpg",
     },
     {
       name: "យ៉េន ម៉ារ៉ា",
       role: "សមាជិកក្រុម",
-      image: "./img/♡TAEHYUNG♡.jfif",
+      image: "src/Asset/img/mara.jpg",
     },
     {
       name: "សំ សុគន្ធស្រីពេជ្រ",
       role: "សមាជិកក្រុម",
-      image: "./img/♡TAEHYUNG♡.jfif",
+      image: "src/Asset/img/srey pich.jpg",
     },
-    { name: "បុល សុខហេង", role: "សមាជិកក្រុម", image: "./img/♡TAEHYUNG♡.jfif" },
+    {
+      name: "បុល សុខហេង",
+      role: "សមាជិកក្រុម",
+      image: "src/Asset/img/sokheng.jpg",
+    },
     {
       name: "អ៊ឹង គីមចេង",
       role: "សមាជិកក្រុម",
-      image: "./img/♡TAEHYUNG♡.jfif",
+      image: "src/Asset/img/cheng.jpg",
     },
     {
       name: "លឹម សុផាណារ៉ាត",
       role: "សមាជិកក្រុម",
-      image: "./img/♡TAEHYUNG♡.jfif",
+      image: "src/Asset/img/narath.jpg",
     },
   ];
 

@@ -4,13 +4,13 @@ export default function FooterComponent() {
   return (
     <>
       <footer>
-        <section className="mt-10 bg-white border-2 sm:pt-14 lg:pt-20">
+        <section className="mt-10 bg-white border-2 sm:pt-14 sm:pb-5 lg:pt-20">
           <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
             <div className="grid grid-cols-2 gap-x-5 gap-y-12 md:grid-cols-5 md:gap-x-12">
               <div>
                 <img
                   className="w-32 h-32"
-                  src="../Image/logo.png"
+                  src="src/assets/Image/logo.png"
                   alt="logo image"
                 />
                 <h1 className="text-3xl font-bold text-green-600 text-start">
@@ -20,10 +20,6 @@ export default function FooterComponent() {
                   Empowering learners worldwide with accessible and engaging
                   content.
                 </p>
-                <div className="flex mt-5">
-                  <i className="w-4 h-4 mr-3 text-blue-500 fa-solid fa-phone-volume"></i>
-                  <p>+012 (345) 678 99</p>
-                </div>
               </div>
               <div>
                 <p className="text-base font-bold text-black">Resources</p>
@@ -198,6 +194,10 @@ export default function FooterComponent() {
                     </a>
                   </li>
                 </ul>
+                <div className="flex mt-5">
+                  <i className="w-4 h-4 mr-3 text-blue-500 fa-solid fa-phone-volume"></i>
+                  <p>+012 (345) 678 99</p>
+                </div>
                 <p className="w-full text-sm text-black mt-7">© 2024 CSTAD</p>
               </div>
             </div>

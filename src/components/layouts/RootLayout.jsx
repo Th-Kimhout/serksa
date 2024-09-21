@@ -1,8 +1,7 @@
 import React from "react";
-import NavbarComponent from "./NavbarComponent";
-import FooterComponent from "./FooterComponent";
+import { NavbarComponent } from "./NavbarComponent";
 import { Outlet } from "react-router-dom";
-import App from "../../App";
+import FooterComponent from "./FooterComponent";
 import ChatHead from "../chatBot/ChatHead";
 
 export default function RootLayout() {
@@ -12,12 +11,9 @@ export default function RootLayout() {
         <NavbarComponent />
       </header>
       <main>
-        <App />
         <Outlet />
       </main>
-
       <ChatHead />
-
       <FooterComponent />
     </>
   );
