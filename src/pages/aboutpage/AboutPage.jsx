@@ -1,7 +1,7 @@
 import { Members } from "./Member.jsx";
 export function AboutPage() {
   return (
-    <main className="w-4/5 px-4 mx-auto mt-8 font-serif">
+    <section className="w-4/5 px-4 mx-auto mt-8 ">
       <div className="flex flex-wrap items-center">
         {/* Left Side - Text Content */}
         <div className="w-full pr-4 lg:w-1/2">
@@ -271,7 +271,7 @@ export function AboutPage() {
           <Members />
         </div>
       </section>
-    </main>
+    </section>
   );
 }
 

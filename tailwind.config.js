@@ -17,8 +17,14 @@ export default {
         textGrayHover: "gray-700",
       },
       fontFamily: {
-        englishFont: ["Inter", "Arial", "sans-serif"],
-        khmerFont: ["Koh Santepheap", "serif"],
+        englishFont: [
+          "Inter",
+          "Arial",
+          "Koh Santepheap",
+          "sans-serif",
+          "serif",
+        ],
+        // khmerFont: ["Koh Santepheap", "serif"],
       },
       fontSize: {
         Title: "24px",
@@ -28,5 +34,5 @@ export default {
       },
     },
   },
-  plugins: [ flowbite.plugin()],
+  plugins: [flowbite.plugin()],
 };
