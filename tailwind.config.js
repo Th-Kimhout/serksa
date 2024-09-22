@@ -5,33 +5,42 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#15803D",
-        primaryHover: "#15733D",
-        secondary: "#2563EB",
+        primary: "#04AA6D",
+        primaryHover: "#15743D",
+        secondary: "#0D9488",
         secondaryHover: "#2563CC",
-        textBlack: "gray-900",
-        textWhite: "white",
-        textGray: "gray-600",
-        textGrayLight: "gray-400",
-        textGrayDark: "gray-500",
-        textGrayHover: "gray-700",
+        blueLight: "#2563eb",
+        danger: "#e74c3c",
+        textBlack: "#111827",
+        white: "white",
+        textGray: "#4B5563",
+        borderColor: "#94a3b8",
+        textDark: "#D3D3D4",
+        cardDark: "#1f2937",
       },
       fontFamily: {
         englishFont: ["Inter", "Koh Santepheap", "sans-serif", "serif"],
       },
       fontSize: {
+        heroText: "55px",
+        heroResponsive: "40px",
         Title: "24px",
         Description: "18px",
         Subtitle: "16px",
         Small: "14px",
       },
-      screens: {
-        tablet: "640px",
-
-        laptop: "1024px",
+      container: {
+        center: true,
+        padding: "1rem",
+        screens: {
+          sm: "640px",
+          md: "768px",
+          lg: "1024px",
+          xl: "1280px",
+        },
       },
     },
   },
+  plugins: [flowbite.plugin(), require("flowbite/plugin")],
   darkMode: "class",
-  plugins: [flowbite.plugin()],
 };

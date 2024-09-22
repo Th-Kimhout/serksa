@@ -10,7 +10,7 @@ import AboutPage from "./pages/aboutpage/AboutPage.jsx";
 import MyLearning from "./pages/watchLater/WatchLater.jsx";
 import Login from "./pages/auth/Login.jsx";
 import Verify from "./pages/auth/Verify.jsx";
-import { CategoryCard } from "./components/cards/CategoryCard.jsx";
+import { CategoryCard } from "./components/Cards/CategoryCard.jsx";
 import CoursePreview from "./pages/courseWYL/CourseWYL.jsx";
 import Started from "./pages/started/Started.jsx";
 import { EditInfo } from "./pages/auth/SettingEditInfo.jsx";

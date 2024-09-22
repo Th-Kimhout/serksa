@@ -3,6 +3,8 @@ import { Homepage } from "./pages/homepage/Homepage";
 import { Metadata } from "./lib/Metadata";
 
 function App() {
+
+  
   return (
     <>
       <Metadata

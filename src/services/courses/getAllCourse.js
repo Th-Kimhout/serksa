@@ -1,20 +1,23 @@
-import { BASE_URL } from "../../api/base_url";
+import { BASE_URL } from "../api/base_url";
 // get all product
-// export async function getAllCourses(){
-//     try{
-//         // method fetch
-//     const response=fetch(`${BASE_URL}courses`).then((res)=>res.json());
-//     // console.log("response",response);
-//     const data= await response;
-//     // console.log("data",data.products);
-//     return data?.products;
-//     }catch(error){
-//         console.log(error);
-//     }
-// }
-export function getAllCourses() {
-  const response = fetch(`${BASE_URL}courses`)
-    .then((res) => res.json())
-    .then((data) => console.log("data", data.courses));
-  // console.log("Reaspone",response.course);
+export async function getAllCourses() {
+  try{
+    const response = fetch(`${BASE_URL}courses`).then((res) => res.json())
+    const data =await response;
+  return data?.content;
+  }catch (error){
+    console.log(error);
+  }
 }
+// get single course
+export async function getSingleCourses(id) {
+  try{
+    const response = fetch(`${BASE_URL}courses/${id}`).then((res) => res.json())
+    const data =await response;
+  return data?.content;
+  }catch (error){
+    console.log(error);
+  }
+}
+
+
