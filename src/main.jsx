@@ -17,8 +17,9 @@ import { EditInfo } from "./pages/auth/SettingEditInfo.jsx";
 import { ChangePW } from "./pages/auth/SettingChangePW.jsx";
 import { SettingChangeEmail } from "./pages/auth/SettingChangeEmail.jsx";
 import { SettingDeleteAcc } from "./pages/auth/SettingDeleteAcc.jsx";
+import WatchLater from "./pages/watchLater/WatchLater.jsx";
 import { HelmetProvider } from "react-helmet-async";
-import { Metadata } from "./lib/Metadata.jsx";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -49,8 +50,8 @@ const router = createBrowserRouter([
         element: <AboutPage />,
       },
       {
-        path: "/MyLearning",
-        element: <MyLearning />,
+        path: "/watchLater",
+        element: <WatchLater />,
       },
       {
         path: "/Category",
