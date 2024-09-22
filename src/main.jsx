@@ -10,7 +10,7 @@ import AboutPage from "./pages/aboutpage/AboutPage.jsx";
 import WatchLater from "./pages/watchLater/WatchLater.jsx";
 import Login from "./pages/auth/Login.jsx";
 import Verify from "./pages/auth/Verify.jsx";
-import { CategoryCard } from "./components/Cards/CategoryCard.jsx";
+import { CategoryCard } from "./components/cards/CategoryCard.jsx";
 import CourseDetail from "./pages/courseDetail/CourseDetail.jsx";
 import Started from "./pages/started/Started.jsx";
 import { HelmetProvider } from "react-helmet-async";
