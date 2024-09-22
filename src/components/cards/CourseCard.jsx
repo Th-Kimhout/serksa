@@ -19,10 +19,10 @@ const CourseCard = () => {
           icon={farBookmark}
           className="absolute top-5 right-5 text-xl"
         />
-        <h5 className="text-2xl font-bold tracking-tight text-gray-900">
+        <h5 className="text-Title font-bold tracking-tight text-textBlack">
           UX/UI Design Course
         </h5>
-        <p className="mt-2 font-normal text-gray-700">
+        <p className="mt-2 font-normal text-gray-700 text-Description">
           A UX/UI design course teaches creating user-centered designs,
           including user research, wireframing, prototyping, and visual design.
         </p>
@@ -34,7 +34,7 @@ const CourseCard = () => {
             alt="Instructor Photo"
           />
           <div className="ml-3">
-            <p className="text-sm font-medium text-gray-900">
+            <p className="text-sm font-medium text-textBlack">
               Prashant Kumar Singh
             </p>
             <p className="text-sm text-gray-500">Software Developer</p>
@@ -43,11 +43,11 @@ const CourseCard = () => {
 
         <div className="mt-4 flex items-center justify-between text-gray-500">
           <div className="flex items-center">
-            <FontAwesomeIcon icon={faBookOpen} className="w-5 h-5 mt-2 text-green-600" />
+            <FontAwesomeIcon icon={faBookOpen} className="w-5 h-5 mt-2 text-primary" />
             <span className="ml-2 font-bold text-sm">10 Lectures</span>
           </div>
           <div className="flex items-center">
-            <FontAwesomeIcon icon={faClock} className="w-5 h-5 mt-2 text-green-600" />
+            <FontAwesomeIcon icon={faClock} className="w-5 h-5 mt-2 text-primary" />
             <span className="ml-2 font-bold text-sm">1hr 30mins</span>
           </div>
         </div>

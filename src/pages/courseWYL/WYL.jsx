@@ -8,7 +8,7 @@ export function WYL() {
           <Accordion.Panel>
             <Accordion.Title>Get started with Tailwind CSS</Accordion.Title>
             <Accordion.Content>
-              <p className="mb-2 text-gray-900 dark:text-gray-400 ">
+              <p className="mb-2 text-textBlack dark:text-gray-400 ">
                 <ul>
                   <li>
                     <a href="" class="hover:text-secondaryHover">
@@ -32,7 +32,7 @@ export function WYL() {
           <Accordion.Panel>
             <Accordion.Title>Core concepts</Accordion.Title>
             <Accordion.Content>
-              <p className="mb-2 text-gray-900 dark:text-gray-400 ">
+              <p className="mb-2 text-textBlack dark:text-gray-400 ">
                 <ul>
                   <li>
                     <a href="" class="hover:text-secondaryHover">
@@ -61,7 +61,7 @@ export function WYL() {
           <Accordion.Panel>
             <Accordion.Title>Style</Accordion.Title>
             <Accordion.Content>
-              <p className="mb-2 text-gray-900 dark:text-gray-400 ">
+              <p className="mb-2 text-textBlack dark:text-gray-400 ">
                 <ul>
                   <li>
                     <a href="" class="hover:text-secondaryHover">

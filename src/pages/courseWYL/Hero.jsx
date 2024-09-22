@@ -31,7 +31,7 @@ export function Hero() {
             Mr David
           </a>
         <Link to="/Started">
-        <button class="w-full text-white bg-primary rounded py-2 mt-2 hover:bg-primaryHover hover:text-gray-400">
+        <button class="w-full text-white bg-primary rounded py-2 mt-2 hover:bg-primaryHover hover:text-textGray">
             Get Started
           </button></Link>
         </div>

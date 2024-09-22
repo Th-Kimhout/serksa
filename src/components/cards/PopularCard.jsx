@@ -11,7 +11,7 @@ const popularCourses = [
     title: "Web Development Bootcamp",
     description:
       "Learn full-stack web development from HTML, CSS, JavaScript to backend technologies and databases.",
-    image: "src/assets/Image/webdev.jpg",
+    image: "src/assets/Image/Webdevel.png",
     lectures: "20 Lectures",
     duration: "3hrs 15mins",
   },
@@ -19,7 +19,7 @@ const popularCourses = [
     title: "Photography Basics",
     description:
       "This course covers the fundamental techniques of photography, including composition, lighting, and editing.",
-    image: "src/assets/Image/photo.jpg",
+    image: "src/assets/Image/Photograp.jpg",
     lectures: "8 Lectures",
     duration: "2hrs",
   },
@@ -37,20 +37,20 @@ export function PopularCard() {
 
             <div class="p-5 relative">
               <i class="fa-regular fa-bookmark absolute top-5 right-5 text-xl"></i>
-              <h5 class="text-2xl font-bold tracking-tight text-gray-900">
+              <h5 class="text-2xl font-bold tracking-tight text-textBlack">
                 {PCard.title}
               </h5>
               <p class="mt-2 font-normal text-gray-700">
                 {PCard.description}
               </p>
 
-              <div class="mt-4 flex items-center justify-between text-gray-500">
+              <div class="mt-4 flex items-center justify-between text-textGray">
                 <div class="flex items-center">
-                  <i class="fa-solid fa-book-open w-5 h-5 mt-2 text-green-600"></i>
+                  <i class="fa-solid fa-book-open w-5 h-5 mt-2 text-primary"></i>
                   <span class="ml-2 font-bold text-sm">{PCard.lectures}</span>
                 </div>
                 <div class="flex items-center">
-                  <i class="fa-regular fa-clock w-5 h-5 mt-2 text-green-600"></i>
+                  <i class="fa-regular fa-clock w-5 h-5 mt-2 text-primary"></i>
                   <span class="ml-2 font-bold text-sm">{PCard.duration}</span>
                 </div>
               </div>

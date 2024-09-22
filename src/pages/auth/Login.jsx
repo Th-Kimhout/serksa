@@ -23,15 +23,15 @@ export default function Login() {
                                 <form class="py-8 px-5 h-36 mb-96 grid justify-center">
                                     <h2 class="text-xl font-bold">Personal Information</h2>
                                     <p class="mt-4">Name</p>
-                                    <small class="mt-2 mb-3 border border-slate-400 h-8 w-96 rounded-md leading-8 px-2">Oeng Kimcheng</small>
+                                    <small class="mt-2 mb-3 border border-borderColor h-8 w-96 rounded-md leading-8 px-2">Oeng Kimcheng</small>
                                     <p>Username</p>
-                                    <small class="mt-2 mb-3 border border-slate-400 h-8 w-96 rounded-md leading-8 px-2">@Ahcheng16</small>
+                                    <small class="mt-2 mb-3 border border-borderColor h-8 w-96 rounded-md leading-8 px-2">@Ahcheng16</small>
                                     <p>Gender</p>
-                                    <small class="mt-2 mb-3 border border-slate-400 h-8 w-96 rounded-md leading-8 px-2">Female</small>
+                                    <small class="mt-2 mb-3 border border-borderColor h-8 w-96 rounded-md leading-8 px-2">Female</small>
                                     <p>Email address</p>
-                                    <small class="mt-2 mb-3 border border-slate-400 h-8 w-96 rounded-md leading-8 px-2">ahkimcheng@gmail.com</small>
+                                    <small class="mt-2 mb-3 border border-borderColor h-8 w-96 rounded-md leading-8 px-2">ahkimcheng@gmail.com</small>
                                     <p>Bio</p>
-                                    <small class="mt-2 mb-3 border border-slate-400 h-fit w-96 rounded-md leading-8 px-2">Yesterday is in the past, Today is today.</small>
+                                    <small class="mt-2 mb-3 border border-borderColor h-fit w-96 rounded-md leading-8 px-2">Yesterday is in the past, Today is today.</small>
                                 </form>
                         </div>
                     </div>

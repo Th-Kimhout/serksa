@@ -36,8 +36,8 @@ export function CategoryCard() {
   return (
     <div className="w-4/5 mx-auto">
       <div className="text-center mt-20">
-          <h1 className="text-4xl font-bold text-green-700">All Categories </h1>
-          <p className="text-gray-600 mt-2">
+          <h1 className="text-4xl font-bold text-primary">All Categories </h1>
+          <p className="text-textGray mt-2 text-Description">
             Gain comprehensive knowledge and skills through our expertly
             designed courses, tailored to enhance your learning experience.
           </p>
@@ -57,7 +57,7 @@ export function CategoryCard() {
           </a>
           <div className="p-5">
             <a href="#">
-              <h5 className="mb-2 text-center text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+              <h5 className="mb-2 text-center text-Title font-bold tracking-tight text-textBlack dark:text-white">
                 {tip.title}
               </h5>
             </a>
