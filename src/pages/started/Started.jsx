@@ -3,7 +3,7 @@ import { Groupcard } from "../courseWYL/Groupcard.jsx";
 export default function Started() {
   return (
     <>
-      <div className="w-4/5 mx-auto">
+      <div className="container mx-auto">
         <iframe
           className="mx-auto"
           width="560"

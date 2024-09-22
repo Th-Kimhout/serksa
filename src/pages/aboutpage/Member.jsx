@@ -45,23 +45,23 @@ export function Members() {
 
   return (
     <div>
-      <div className="relative text-center font-khmer font-bold text-4xl text-green-600">
+      <div className="relative text-center font-khmer font-bold text-4xl text-primary">
         <h3 data-aos="fade-up" data-aos-duration="1000" className="pt-14">
-          ក្រុមរបស់ពួកយើង
+          Our members
         </h3>
       </div>
-      <div className="relative z-[5] w-11/12 mx-auto">
+      <div className="relative z-[5] container mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5 justify-center py-20">
           {teamMembers.map((member, index) => (
             <section key={index} className="flex justify-center">
               <div className="h-[230px] w-[205px] flex justify-center items-center relative font-land">
-                <div className="absolute bottom-0 left-0 w-[50%] h-[50%] border-l-[3px] border-b-[3px] border-green-500"></div>
+                <div className="absolute bottom-0 left-0 w-[50%] h-[50%] border-l-[3px] border-b-[3px] border-primary"></div>
                 <div
                   data-aos="fade-up-right"
                   data-aos-duration="1000"
                   className="h-[218px] w-[193px] relative overflow-hidden"
                 >
-                  <div className="absolute inset-0 bg-blue-600 transform origin-bottom-left -z-20"></div>
+                  <div className="absolute inset-0 bg-blueLight transform origin-bottom-left -z-20"></div>
                   <div className="z-50 flex justify-center items-center h-full">
                     <div className="text-center">
                       <img
@@ -99,7 +99,7 @@ export function Members() {
             </section>
           ))}
         </div>
-        <div className="text-center text-blue-600 max-w-[780px] mx-auto pb-14 px-4 md:px-8 font-land font-semibold">
+        <div className="text-center text-blueLight max-w-[780px] mx-auto pb-14 px-4 md:px-8 font-land font-semibold">
           <p
             data-aos="fade-up"
             data-aos-duration="400"

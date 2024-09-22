@@ -1,7 +1,7 @@
 export function Groupcard() {
   return (
     <>
-      <div class="w-4/5 mx-auto my-10">
+      <div class="container mx-auto my-10">
         <p class="text-4xl text-primary font-bold w-full">Similar</p>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 w-4/5 mx-auto mb-10 inline">

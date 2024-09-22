@@ -5,7 +5,7 @@ export default {
   theme: {
     extend: {
       colors:{
-        primary: '#15803D',
+        primary: '#04AA6D',
         primaryHover: '#15743D',
         secondary: '#0D9488',
         secondaryHover: '#2563CC',
@@ -14,7 +14,9 @@ export default {
         textBlack: '#111827',
         white: 'white',
         textGray: '#4B5563',
-        borderColor: '#94a3b8'
+        borderColor: '#94a3b8',
+        textDark: '#D3D3D4',
+        cardDark: '#1f2937'
       },
       fontFamily: {
         englishFont: ['Inter', 'Arial', 'sans-serif'],
@@ -22,6 +24,7 @@ export default {
       },
       fontSize:{
         heroText: '55px',
+        heroResponsive: '40px',
         Title : '24px',
         Description: '18px',
         Subtitle: '16px',

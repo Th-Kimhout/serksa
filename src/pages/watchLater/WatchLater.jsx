@@ -24,7 +24,7 @@ export default function MyLearning() {
 <h2 className="text-xl md:text-2xl font-bold mb-10 dark:text-gray-50">watching later</h2>
 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
   {/* card1 */}
-<div className="max-w-sm bg-white border border-gray-200 rounded-lg cursor-pointer hover:shadow overflow-hidden">
+<div className="max-w-sm bg-white border border-gray-200 dark:bg-cardDark rounded-lg cursor-pointer hover:shadow overflow-hidden">
         <a className="relative" href="#">
           <img
             src="src/assets/Image/uxui.jpg "
@@ -33,28 +33,28 @@ export default function MyLearning() {
           />
         </a>
         <div className="p-5 relative">
-          <i className="fa-regular fa-bookmark absolute top-5 right-5 text-xl"></i>
-          <h5 className="text-2xl font-bold tracking-tight text-textBlack">
+          <i className="fa-regular fa-bookmark absolute top-5 right-5 text-xl dark:text-primary"></i>
+          <h5 className="text-2xl font-bold tracking-tight text-textBlack dark:text-textDark">
             UX/UI Design Course
           </h5>
-          <p className="mt-2 font-normal text-textGray">
+          <p className="mt-2 font-normal text-textGray dark:text-textDark">
             A UX/UI design course teaches creating user-centered designs,
             including user research, wireframing, prototyping, and visual design.
           </p>
           <div className="flex items-center mt-4">
             <img className="w-10 h-10 rounded-full" src="../Image/profile.jpg" alt="Instructor Photo" />
             <div className="ml-3">
-              <p className="text-sm font-medium text-textBlack">Prashant Kumar Singh</p>
-              <p className="text-sm text-gray-500">Software Developer</p>
+              <p className="text-sm font-medium text-textBlack dark:text-textDark">Prashant Kumar Singh</p>
+              <p className="text-sm text-gray-500 dark:text-textDark">Software Developer</p>
             </div>
           </div>
           <div className="mt-4 flex items-center justify-between text-gray-500">
             <div className="flex items-center">
-              <i className="fa-solid fa-book-open w-5 h-5 mt-2 text-primary"></i>
+              <i className="fa-solid fa-book-open w-5 h-5 mt-2 text-primary dark:text-primary"></i>
               <span className="ml-2 font-bold text-sm">10 Lectures</span>
             </div>
             <div className="flex items-center">
-              <i className="fa-regular fa-clock w-5 h-5 mt-2 text-primary"></i>
+              <i className="fa-regular fa-clock w-5 h-5 mt-2 text-primary dark:text-primary"></i>
               <span className="ml-2 font-bold text-sm">1hr 30mins</span>
             </div>
           </div>

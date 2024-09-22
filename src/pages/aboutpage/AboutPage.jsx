@@ -1,20 +1,20 @@
 import { Members } from "./Member.jsx";
 export function AboutPage() {
   return (
-    <main className="w-4/5 px-4 mx-auto mt-8 font-serif">
+    <main className="container px-4 mx-auto mt-8 font-serif">
       <div className="flex flex-wrap items-center">
         {/* Left Side - Text Content */}
         <div className="w-full pr-4 lg:w-1/2">
-          <h1 className="mb-4 text-4xl font-bold text-center text-blue-600 font-land ">
-            អំពីយើង
+          <h1 className="mb-4 text-4xl font-bold text-center text-blueLight font-land ">
+            About us
           </h1>
-          <h2 className="mb-4 text-2xl">
-            <span className="font-semibold text-green-600 font-english">
+          <h2 className="mb-4 text-2xl dark:text-textDark">
+            <span className="font-semibold text-primary dark:text-primary font-english">
               SERKSA
             </span>{" "}
             Providing The Best Opportunities To Get Lots Of Skill From Us.
           </h2>
-          <p className="mb-4 text-lg text-gray-900 font-english">
+          <p className="mb-4 text-lg text-textBlack font-english dark:text-textDark">
             Our mission is to unlock the full potential of every individual
             through the transformative power of education. We are dedicated to
             providing a beacon of hope and opportunity by offering free,
@@ -23,15 +23,16 @@ export function AboutPage() {
             growth, making learning accessible and impactful for everyone in
             Cambodia.
           </p>
-          <button className="px-4 py-2 text-white bg-green-500 rounded-md hover:bg-green-600">
+          <button className="px-4 py-2 text-white bg-primary rounded-md hover:bg-primary">
             Join Us
           </button>
         </div>
 
         {/* Right Side - Images */}
-        <div className="w-full mt-4 lg:w-1/2 lg:mt-0">
+        <div className="w-full mt-4 lg:w-1/2  lg:mt-0">
           <img
-            src="src/Asset/img/Team work.gif"
+            src="src/assets/Image/Team work.gif"
+            className="rounded-lg shadow-md"
             alt="Office Space"
             // className="mb-3 ml-20 rounded-lg shadow-md"
           />
@@ -44,14 +45,14 @@ export function AboutPage() {
       </div>
 
       <section className="container px-4 mx-auto mt-16 font-english">
-        <h2 className="mb-8 text-3xl font-bold text-center text-blue-600">
-          បេសកម្មរបស់យើង
+        <h2 className="mb-8 text-3xl font-bold text-center text-blueLight">
+          Our mission
         </h2>
         <div className="flex flex-wrap items-center">
           {/* Left Side - Image */}
           <div className="w-full pr-4 lg:w-1/2">
             <img
-              src="src/Asset/img/Studying (1).gif"
+              src="src/assets/Image/Studying.gif"
               alt="Educational Concept"
               className="rounded-lg shadow-md"
               data-aos="fade-right"
@@ -60,14 +61,14 @@ export function AboutPage() {
           </div>
 
           {/* Right Side - Text Content */}
-          <div className="w-full mt-4 lg:w-1/2 lg:mt-0">
+          <div className="w-full mt-4 lg:w-1/2 lg:mt-0 dark:text-textDark">
             <p
-              className="text-gray-900"
+              className="text-textBlack dark:text-textDark"
               data-aos="fade-down-left"
-              data-aos-duration="1000"
+              data-aos-duration="300"
             >
-              At{" "}
-              <span className="text-lg text-green-600 font-english">
+              At
+              <span className="text-lg text-primary font-english dark:text-primary">
                 SERKSA
               </span>
               , our mission is simple yet powerful: to make high-quality
@@ -83,123 +84,123 @@ export function AboutPage() {
       {/* Benefits Section */}
       <section className="container px-4 mx-auto mt-16 font-land">
         <h2
-          className="mb-8 text-3xl font-bold text-center text-blue-600"
+          className="mb-8 text-3xl font-bold text-center text-blueLight"
           data-aos="fade-up"
           data-aos-delay="30"
           data-aos-duration="10"
         >
-          គុណសម្បត្តិក្នុងការចូលរូមជាមួយយើង
+          Our benefits
         </h2>
-        <p className="mb-8 text-xl text-center font-english">
+        <p className="mb-8 text-xl text-center font-english dark:text-textDark">
           By Joining{" "}
-          <span className="font-semibold text-green-600 font-english">
+          <span className="font-semibold text-primary font-english dark:text-primary">
             SERKSA
           </span>
           , One Can Avail a Lot of Benefits.
         </p>
-        <p className="mb-8 text-lg text-center text-gray-900">
+        <p className="mb-8 text-lg text-center text-textBlack dark:text-textDark">
           Access a wide range of video e-learning materials designed to empower
           learners in Cambodia. Our platform offers diverse skills, from
           technical to creative, ensuring that all learners can grow.
         </p>
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           <div
-            className="p-6 bg-blue-100 rounded-lg"
+            className="p-6 dark:bg-cardDark bg-blue-100 rounded-lg"
             data-aos="fade-up"
             data-aos-duration="10"
           >
-            <h3 className="mb-2 text-xl font-semibold">01 Standardization</h3>
-            <p className="text-gray-900">
+            <h3 className="mb-2 text-xl font-semibold dark:text-textDark">01 Standardization</h3>
+            <p className="text-textBlack dark:text-textDark">
               We ensure high-quality learning experiences across all our
               courses. Whether you're...
             </p>
-            <a href="#" className="text-blue-600 hover:underline">
+            <a href="#" className="text-blueLight hover:underline">
               Read More
             </a>
           </div>
           <div
-            className="p-6 bg-blue-100 rounded-lg"
+            className="p-6 dark:bg-cardDark bg-blue-100 rounded-lg"
             data-aos="fade-up"
             data-aos-delay="100"
             data-aos-duration="10"
           >
-            <h3 className="mb-2 text-xl font-semibold font-english">
+            <h3 className="mb-2 text-xl font-semibold font-english dark:text-textDark">
               02 Reduced Costs
             </h3>
-            <p className="text-gray-900">
+            <p className="text-textBlack dark:text-textDark">
               Our platform is free of charge, making skill acquisition
               accessible for everyone. With us...
             </p>
-            <a href="#" className="text-blue-600 hover:underline">
+            <a href="#" className="text-blueLight hover:underline">
               Read More
             </a>
           </div>
           <div
-            className="p-6 bg-blue-100 rounded-lg"
+            className="p-6 dark:bg-cardDark bg-blue-100 rounded-lg"
             data-aos="fade-up"
             data-aos-delay="200"
             data-aos-duration="10"
           >
-            <h3 className="mb-2 text-xl font-semibold font-english">
+            <h3 className="mb-2 text-xl font-semibold font-english dark:text-textDark">
               03 More Customization
             </h3>
-            <p className="text-gray-900">
+            <p className="text-textBlack dark:text-textDark">
               Learning isn't one-size-fits-all. Our platform allows you to
               select...
             </p>
-            <a href="#" className="text-blue-600 hover:underline">
+            <a href="#" className="text-blueLight hover:underline">
               Read More
             </a>
           </div>
           <div
-            className="p-6 bg-blue-100 rounded-lg"
+            className="p-6 dark:bg-cardDark bg-blue-100 rounded-lg"
             data-aos="fade-up"
             data-aos-delay="300"
             data-aos-duration="10"
           >
-            <h3 className="mb-2 text-xl font-semibold">
+            <h3 className="mb-2 text-xl font-semibold dark:text-textDark">
               04 Affordable Pricing
             </h3>
-            <p className="text-gray-900">
+            <p className="text-textBlack dark:text-textDark">
               No hidden costs! The platform remains completely free, with a
               focus on providing education for all Cambodians...
             </p>
 
-            <a href="#" className="text-green-600 hover:underline">
+            <a href="#" className="text-primary hover:underline">
               Read More
             </a>
           </div>
           <div
-            className="p-6 bg-blue-100 rounded-lg"
+            className="p-6 dark:bg-cardDark bg-blue-100 rounded-lg"
             data-aos="fade-up"
             data-aos-delay="400"
             data-aos-duration="10"
           >
-            <h3 className="mb-2 text-xl font-semibold">
+            <h3 className="mb-2 text-xl font-semibold dark:text-textDark">
               05 Learner Satisfaction
             </h3>
-            <p className="text-gray-900">
+            <p className="text-textBlack dark:text-textDark">
               We aim for high satisfaction by offering a broad spectrum of
               courses and constantly...
             </p>
-            <a href="#" className="text-blue-600 hover:underline">
+            <a href="#" className="text-blueLight hover:underline">
               Read More
             </a>
           </div>
           <div
-            className="p-6 bg-blue-100 rounded-lg"
+            className="p-6 dark:bg-cardDark bg-blue-100 rounded-lg"
             data-aos="fade-up"
             data-aos-delay="500"
             data-aos-duration="10"
           >
-            <h3 className="mb-2 text-xl font-semibold">
+            <h3 className="mb-2 text-xl font-semibold dark:text-textDark">
               06 Multimedia Materials
             </h3>
-            <p className="text-gray-900">
+            <p className="text-textBlack dark:text-textDark">
               Our platform includes video tutorials, interactive learning, and
               downloadable...
             </p>
-            <a href="#" className="text-green-600 hover:underline">
+            <a href="#" className="text-primary hover:underline">
               Read More
             </a>
           </div>
@@ -211,9 +212,9 @@ export function AboutPage() {
         className="relative w-full h-full bg-cover border-none -z-50 font-body"
         style={{ backgroundImage: `url(#)` }}
       >
-        <div className="text-4xl font-bold text-center text-green-600 font-khmer">
+        <div className="text-4xl font-bold text-center text-primary font-khmer">
           <h3 data-aos="zoom-in-up" className="pt-4 aos-init aos-animate">
-            អ្នកណែនាំរបស់យើង
+          Our Mentors
           </h3>
           <section className="flex flex-wrap-reverse justify-center py-14">
             {/* Mentor 1 */}
@@ -223,9 +224,9 @@ export function AboutPage() {
               data-aos-duration="10"
               className="h-[215px] w-[255px] flex justify-center items-center relative m-4 aos-init aos-animate"
             >
-              <div className="absolute bottom-0 left-0 w-[50%] h-[50%] border-l-[3px] border-b-[3px] border-green-500"></div>
+              <div className="absolute bottom-0 left-0 w-[50%] h-[50%] border-l-[3px] border-b-[3px] border-primary"></div>
               <div className="h-[200px] w-[240px] relative overflow-hidden flex justify-center items-center">
-                <div className="absolute inset-0 origin-bottom-left transform bg-blue-600 -z-20"></div>
+                <div className="absolute inset-0 origin-bottom-left transform bg-blueLight -z-20"></div>
                 <div className="z-50 flex items-center justify-center h-full">
                   <div className="text-center">
                     <img
@@ -249,9 +250,9 @@ export function AboutPage() {
               data-aos-duration="10"
               className="h-[215px] w-[255px] flex justify-center items-center relative m-4 aos-init aos-animate"
             >
-              <div className="absolute top-0 right-0 w-[50%] h-[50%] border-r-[3px] border-t-[3px] border-green-500"></div>
+              <div className="absolute top-0 right-0 w-[50%] h-[50%] border-r-[3px] border-t-[3px] border-primary"></div>
               <div className="h-[200px] w-[240px] relative overflow-hidden flex justify-center items-center">
-                <div className="absolute inset-0 origin-bottom-left transform bg-blue-600 -z-20"></div>
+                <div className="absolute inset-0 origin-bottom-left transform bg-blueLight -z-20"></div>
                 <div className="z-50 flex items-center justify-center h-full">
                   <div className="text-center">
                     <img
