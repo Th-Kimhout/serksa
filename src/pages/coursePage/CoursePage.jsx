@@ -47,17 +47,21 @@ export default function CoursePage() {
 
       {/* Section 2 */}
       <section className="mt-10 w-full container mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5  mx-auto">
-            {courses.map((content) => (
-              <CourseCard
-                title={content.title}
-                thumbnail={content.thumbnail.replace('http://localhost:8080/image/', '')}
-                description={content.description}
-                instructorUsername={content.instructorUsername}
-              />
-            ))}
-          </div>
-        </section>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5  mx-auto">
+          {courses.map((content) => (
+            <CourseCard
+              title={content.title}
+              thumbnail={content.thumbnail.replace(
+                "http://localhost:8080/image/",
+                ""
+              )}
+              description={content.description}
+              instructorUsername={content.instructorUsername}
+              id={content.id}
+            />
+          ))}
+        </div>
+      </section>
     </main>
   );
 }

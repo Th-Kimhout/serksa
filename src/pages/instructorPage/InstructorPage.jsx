@@ -16,30 +16,34 @@ export default function InstructorPage() {
   }, []);
   return (
     <>
-      <div className="max-w-screen-xl min-w-80 mx-auto p-5">
-        <h1 className="text-primary font-bold text-3xl  mt-5">Instructor</h1>
-        <section className=" ">
+      <div className="container p-5 mx-auto min-w-80">
+        <h1 className="mt-5 text-3xl font-bold text-primary dark:text-textDark">
+          Instructor
+        </h1>
+        <section className="">
           <div className="grid grid-cols-1 md:grid-cols-3">
-            <div className=" grid place-content-center ">
+            <div className="grid  place-content-center">
               <img
                 src="src/assets/Image/instructor.png"
                 alt="image"
                 className=""
               />
             </div>
-            <div className="  md:col-span-2  pt-10 lg:ps-5">
-              <h2 className="font-bold text-2xl">Prashant Kumar singh</h2>
-              <p className="text-gray-400 font-bold text-lg">
+            <div className="pt-10  md:col-span-2 lg:ps-5">
+              <h2 className="text-2xl font-bold dark:text-textDark">
+                Prashant Kumar singh
+              </h2>
+              <p className="text-lg font-bold text-gray-400">
                 software Developer
               </p>
-              <p className="">
+              <p className="dark:text-textDark lg:text-Description ">
                 Sharing is who I am, and teaching is where I am at my best,
                 because I've been on both sides of that equation, and getting to
                 deliver useful training is my meaningful way to be a part of the
                 creative community.
               </p>
               <br />
-              <p>
+              <p className="dark:text-textDark lg:text-Description ">
                 I've spent a long time watching others learn, and teach, to
                 refine how I work with you to be efficient, useful and, most
                 importantly, memorable. I want you to carry what I've shown you
@@ -48,13 +52,13 @@ export default function InstructorPage() {
               <div className="mt-5">
                 <button
                   type="button"
-                  class="text-blueLight bg-blue-200 border border-borderColor focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-s-lg text-sm px-5 py-2.5  mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+                  class="text-blueLight bg-blue-200 border border-borderColor focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-s-lg text-sm px-5 py-2.5  mb-2 dark:bg-gray-800 dark:text-blueLight dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
                 >
                   Course
                 </button>
                 <button
                   type="button"
-                  class="text-gray-900 bg-white border border-borderColor focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-e-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+                  class="text-textBlack dark:text-textDark bg-white border border-borderColor focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-e-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800  dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
                 >
                   {courses.length ? courses.length : "0"}
                 </button>
@@ -62,11 +66,11 @@ export default function InstructorPage() {
             </div>
           </div>
         </section>
-        <h2 className="font-bold text-3xl  text-primary mx-auto mt-10">
+        <h2 className="mx-auto mt-10 text-3xl font-bold text-primary">
           More Course by Prashant Kumar singh
         </h2>
-        <section className="mt-10 w-full">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5  mx-auto">
+        <section className="w-full mt-10">
+          <div className="grid grid-cols-1 gap-5 mx-auto md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {courses.map((content) => (
               <CourseCard
                 title={content.title}
@@ -76,6 +80,7 @@ export default function InstructorPage() {
                 )}
                 description={content.description}
                 instructorUsername={content.instructorUsername}
+                id={content.id}
               />
             ))}
           </div>

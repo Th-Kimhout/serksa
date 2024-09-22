@@ -2,18 +2,7 @@ import { Members } from "./Member.jsx";
 import { Metadata } from "../../lib/Metadata.jsx";
 export function AboutPage() {
   return (
-<<<<<<< HEAD
     <section className="w-4/5 px-4 mx-auto mt-8 ">
-      <Metadata
-        title="SERKSA - About"
-        description="SERKSA is an free E-Learning Platform that offer a wide ranges of courses. Take your time and learn from Anywhere. SERKSA was developed by CSTAD Pre-University Scholarship Students Group 3."
-        author="CSTAD"
-        keywords="free, learning, free courses, khmer, online"
-        thumbnail="src\assets\logo.jpg"
-      />
-=======
-    <main className="container px-4 mx-auto mt-8 font-serif">
->>>>>>> 3f8f5171abcd437abd3118261336e8ef9ef870ec
       <div className="flex flex-wrap items-center">
         {/* Left Side - Text Content */}
         <div className="w-full pr-4 lg:w-1/2">
@@ -35,13 +24,13 @@ export function AboutPage() {
             growth, making learning accessible and impactful for everyone in
             Cambodia.
           </p>
-          <button className="px-4 py-2 text-white bg-primary rounded-md hover:bg-primary">
+          <button className="px-4 py-2 text-white rounded-md bg-primary hover:bg-primary">
             Join Us
           </button>
         </div>
 
         {/* Right Side - Images */}
-        <div className="w-full mt-4 lg:w-1/2  lg:mt-0">
+        <div className="w-full mt-4 lg:w-1/2 lg:mt-0">
           <img
             src="src/assets/Image/Team work.gif"
             className="rounded-lg shadow-md"
@@ -117,11 +106,13 @@ export function AboutPage() {
         </p>
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           <div
-            className="p-6 dark:bg-cardDark bg-blue-100 rounded-lg"
+            className="p-6 bg-blue-100 rounded-lg dark:bg-cardDark"
             data-aos="fade-up"
             data-aos-duration="10"
           >
-            <h3 className="mb-2 text-xl font-semibold dark:text-textDark">01 Standardization</h3>
+            <h3 className="mb-2 text-xl font-semibold dark:text-textDark">
+              01 Standardization
+            </h3>
             <p className="text-textBlack dark:text-textDark">
               We ensure high-quality learning experiences across all our
               courses. Whether you're...
@@ -131,7 +122,7 @@ export function AboutPage() {
             </a>
           </div>
           <div
-            className="p-6 dark:bg-cardDark bg-blue-100 rounded-lg"
+            className="p-6 bg-blue-100 rounded-lg dark:bg-cardDark"
             data-aos="fade-up"
             data-aos-delay="100"
             data-aos-duration="10"
@@ -148,7 +139,7 @@ export function AboutPage() {
             </a>
           </div>
           <div
-            className="p-6 dark:bg-cardDark bg-blue-100 rounded-lg"
+            className="p-6 bg-blue-100 rounded-lg dark:bg-cardDark"
             data-aos="fade-up"
             data-aos-delay="200"
             data-aos-duration="10"
@@ -165,7 +156,7 @@ export function AboutPage() {
             </a>
           </div>
           <div
-            className="p-6 dark:bg-cardDark bg-blue-100 rounded-lg"
+            className="p-6 bg-blue-100 rounded-lg dark:bg-cardDark"
             data-aos="fade-up"
             data-aos-delay="300"
             data-aos-duration="10"
@@ -183,7 +174,7 @@ export function AboutPage() {
             </a>
           </div>
           <div
-            className="p-6 dark:bg-cardDark bg-blue-100 rounded-lg"
+            className="p-6 bg-blue-100 rounded-lg dark:bg-cardDark"
             data-aos="fade-up"
             data-aos-delay="400"
             data-aos-duration="10"
@@ -200,7 +191,7 @@ export function AboutPage() {
             </a>
           </div>
           <div
-            className="p-6 dark:bg-cardDark bg-blue-100 rounded-lg"
+            className="p-6 bg-blue-100 rounded-lg dark:bg-cardDark"
             data-aos="fade-up"
             data-aos-delay="500"
             data-aos-duration="10"
@@ -226,7 +217,7 @@ export function AboutPage() {
       >
         <div className="text-4xl font-bold text-center text-primary font-khmer">
           <h3 data-aos="zoom-in-up" className="pt-4 aos-init aos-animate">
-          Our Mentors
+            Our Mentors
           </h3>
           <section className="flex flex-wrap-reverse justify-center py-14">
             {/* Mentor 1 */}

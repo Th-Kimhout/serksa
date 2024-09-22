@@ -23,23 +23,23 @@ export function NavbarComponent() {
   return (
     <>
       <header className="sticky top-0 z-10 bg-white dark:bg-textBlack">
-        <nav className="bg-white dark:bg-textBlack flex justify-between items-center container mx-auto">
+        <nav className="container flex items-center justify-between mx-auto bg-white dark:bg-textBlack">
           <div className="flex items-center space-x-6">
             <div className="flex items-center">
               <Link to="/">
                 <img
                   src="src/assets/Image/logo.png"
                   alt="logo image"
-                  className="h-15 w-20"
+                  className="w-20 h-15"
                 />
               </Link>
             </div>
 
-            <ul className="hidden md:flex space-x-4 text-gray-600 dark:text-textDark text-sm">
+            <ul className="hidden space-x-4 text-sm text-gray-600 md:flex dark:text-textDark">
               <li>
                 <Link
                   to="/CoursePage"
-                  className="hover:text-blueLight  dark:hover:text-blue-400"
+                  className="hover:text-blueLight dark:hover:text-blue-400"
                 >
                   Courses
                 </Link>
@@ -76,11 +76,11 @@ export function NavbarComponent() {
               <input
                 type="text"
                 placeholder="Search"
-                className="border border-gray-300 dark:border-gray-700 rounded-md pl-3 px-20 py-2 text-xs dark:bg-gray-800 dark:text-gray-300"
+                className="px-20 py-2 pl-3 text-xs border border-gray-300 rounded-md dark:border-gray-700 dark:bg-gray-800 dark:text-gray-300"
               />
               <button className="absolute right-2 top-1 text-textGray dark:text-textDark">
                 <svg
-                  className="h-5 w-5"
+                  className="w-5 h-5"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -97,7 +97,7 @@ export function NavbarComponent() {
             </div>
 
             <button
-              className="text-black dark:text-textDark rounded-md"
+              className="text-black rounded-md dark:text-textDark"
               onClick={toggleDarkMode}
               aria-label={
                 darkMode ? "Switch to Light Mode" : "Switch to Dark Mode"
@@ -112,54 +112,19 @@ export function NavbarComponent() {
               <img
                 src="src/assets/Image/instructor.png"
                 alt="Profile"
-                className="h-6 w-6 rounded-full border-2 border-gray-300 dark:border-gray-700"
+                className="w-6 h-6 border-2 border-gray-300 rounded-full dark:border-gray-700"
               />
             </Link>
           </div>
 
-<<<<<<< HEAD
-          <ul className="hidden space-x-4 text-sm text-gray-600 md:flex">
-            <li>
-              <Link to="/CoursePage" className="hover:text-blue-600">
-                Courses
-              </Link>
-            </li>
-            <li>
-              <Link to="/Category" className="hover:text-blue-600">
-                Category
-              </Link>
-            </li>
-            <li>
-              <Link to="/AboutPage" className="hover:text-blue-600">
-                About Us
-              </Link>
-            </li>
-            <li>
-              <Link to="/watchLater" className="hover:text-blue-600">
-              WatchLater
-              </Link>
-            </li>
-          </ul>
-        </div>
-
-        <div className="flex items-center space-x-6">
-          <div className="relative">
-            <input
-              type="text"
-              placeholder="Search"
-              className="px-20 py-2 pl-3 text-xs border border-gray-300 rounded-md"
-            />
-            <button className="absolute text-gray-500 right-2 top-1">
-=======
           <div className="md:hidden">
             <button
               id="mobile-menu-btn"
               className="text-gray-600 dark:text-textDark focus:outline-none"
               onClick={toggleMobileMenu}
             >
->>>>>>> 3f8f5171abcd437abd3118261336e8ef9ef870ec
               <svg
-                className="h-4 w-4"
+                className="w-4 h-4"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -182,7 +147,7 @@ export function NavbarComponent() {
             mobileMenuVisible ? "" : "hidden"
           }`}
         >
-          <ul className="space-y-4 text-gray-600 dark:text-textDark font-semibold text-sm">
+          <ul className="space-y-4 text-sm font-semibold text-gray-600 dark:text-textDark">
             <li>
               <Link
                 to="/CoursePage"
@@ -209,10 +174,10 @@ export function NavbarComponent() {
             </li>
             <li>
               <Link
-                to="/MyLearning"
+                to="/watchLater"
                 className="hover:text-blueLight dark:hover:text-blue-400"
               >
-                My Learning
+                Watch Later
               </Link>
             </li>
           </ul>
