@@ -57,7 +57,7 @@ const GeminiChatBot = () => {
   };
 
   return (
-    <div className="fixed flex flex-col p-4 mx-auto bg-white border border-gray-300 rounded-lg right-24 h-80 max-w-80 bottom-7">
+    <div className="fixed flex flex-col p-4 mx-auto bg-white border 96border-gray-300 rounded-lg right-24 h-[500px] max-w-96 bottom-7">
       <h1 className="mb-4 text-base font-bold">Gemini Assistant</h1>
       <div className="flex-1 p-4 mb-4 overflow-auto border border-gray-300 rounded-lg scroll">
         {messages.map((message, index) => (

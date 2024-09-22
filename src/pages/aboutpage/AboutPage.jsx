@@ -1,7 +1,15 @@
 import { Members } from "./Member.jsx";
+import { Metadata } from "../../lib/Metadata.jsx";
 export function AboutPage() {
   return (
     <section className="w-4/5 px-4 mx-auto mt-8 ">
+      <Metadata
+        title="SERKSA - About"
+        description="SERKSA is an free E-Learning Platform that offer a wide ranges of courses. Take your time and learn from Anywhere. SERKSA was developed by CSTAD Pre-University Scholarship Students Group 3."
+        author="CSTAD"
+        keywords="free, learning, free courses, khmer, online"
+        thumbnail="src\assets\logo.jpg"
+      />
       <div className="flex flex-wrap items-center">
         {/* Left Side - Text Content */}
         <div className="w-full pr-4 lg:w-1/2">

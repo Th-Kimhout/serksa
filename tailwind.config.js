@@ -17,20 +17,18 @@ export default {
         textGrayHover: "gray-700",
       },
       fontFamily: {
-        englishFont: [
-          "Inter",
-          "Arial",
-          "Koh Santepheap",
-          "sans-serif",
-          "serif",
-        ],
-        // khmerFont: ["Koh Santepheap", "serif"],
+        englishFont: ["Inter", "Koh Santepheap", "sans-serif", "serif"],
       },
       fontSize: {
         Title: "24px",
         Description: "18px",
         Subtitle: "16px",
         Small: "14px",
+      },
+      screens: {
+        tablet: "640px",
+
+        laptop: "1024px",
       },
     },
   },

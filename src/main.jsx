@@ -17,7 +17,8 @@ import { EditInfo } from "./pages/auth/SettingEditInfo.jsx";
 import { ChangePW } from "./pages/auth/SettingChangePW.jsx";
 import { SettingChangeEmail } from "./pages/auth/SettingChangeEmail.jsx";
 import { SettingDeleteAcc } from "./pages/auth/SettingDeleteAcc.jsx";
-
+import { HelmetProvider } from "react-helmet-async";
+import { Metadata } from "./lib/Metadata.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -82,8 +83,13 @@ const router = createBrowserRouter([
     ],
   },
 ]);
+
+const helmetContext = {};
+
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <HelmetProvider context={helmetContext}>
+      <RouterProvider router={router} />
+    </HelmetProvider>
   </StrictMode>
 );
