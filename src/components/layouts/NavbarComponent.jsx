@@ -39,8 +39,8 @@ export function NavbarComponent() {
               </Link>
             </li>
             <li>
-              <Link to="/MyLearning" className="hover:text-blue-600">
-                My Learning
+              <Link to="/watchLater" className="hover:text-blue-600">
+              WatchLater
               </Link>
             </li>
           </ul>

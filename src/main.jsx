@@ -17,6 +17,7 @@ import { EditInfo } from "./pages/auth/SettingEditInfo.jsx";
 import { ChangePW } from "./pages/auth/SettingChangePW.jsx";
 import { SettingChangeEmail } from "./pages/auth/SettingChangeEmail.jsx";
 import { SettingDeleteAcc } from "./pages/auth/SettingDeleteAcc.jsx";
+import WatchLater from "./pages/watchLater/WatchLater.jsx";
 
 const router = createBrowserRouter([
   {
@@ -48,8 +49,8 @@ const router = createBrowserRouter([
         element: <AboutPage />,
       },
       {
-        path: "/MyLearning",
-        element: <MyLearning />,
+        path: "/watchLater",
+        element: <WatchLater />,
       },
       {
         path: "/Category",
